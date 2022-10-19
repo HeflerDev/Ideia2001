@@ -1,4 +1,5 @@
-@use "colors";
+@use "variables/colors";
+@import "nav-container";
 
 body {
   background-color: colors.$dark;

@@ -1,0 +1,12 @@
+@use "variables/colors";
+@use "variables/padding";
+
+.nav-container {
+  display: flex;
+  >.lang-block {
+    background-color: colors.$light;
+    display: flex;
+    padding: padding.$large;
+    border-radius: 20px;
+  }
+}
