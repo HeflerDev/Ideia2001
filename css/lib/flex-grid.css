@@ -263,18 +263,5 @@
     max-width: 100 %;
   }
 }
-.nav-container {
-  display: flex;
-}
-.nav-container > .lang-block {
-  background-color: #fff;
-  display: flex;
-  padding: 10px;
-  border-radius: 20px;
-}
 
-body {
-  background-color: #444242;
-}
-
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=flex-grid.css.map */
