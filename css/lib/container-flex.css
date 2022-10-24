@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+  min-height: 100vh;
+}
+@media (min-width: 500px) {
+  .container {
+    width: 500px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    width: 1024px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1400px;
+  }
+}
+
+/*# sourceMappingURL=container-flex.css.map */

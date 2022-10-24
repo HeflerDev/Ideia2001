@@ -1,8 +1,65 @@
+@use "variables/colors";
+@use "variables/icons";
+@use "variables/breakpoints";
+
 .btn-container {
-  >.btn-block{
-    >.icon{}
-    >.cart{}
-    >.phone{}
-    >.btn{}
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  @include break-up(breakpoints.$bk-sm) {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  > .btn-block {
+    @media screen and (max-height: 500px) {
+      flex-basis: 40%;
+    }
+    display: flex;
+    justify-content: center;
+    flex-basis: 80%;
+    margin: 10px auto;
+    background-color: colors.$dark;
+    border: solid colors.$primary 2px;
+    padding: 10px 0;
+    border-radius: 30px;
+    font-weight: bold;
+    overflow: hidden;
+    @include break-up(breakpoints.$bk-sm) {
+      width: 300px;
+    }
+
+    > .icon {
+      width: 24px;
+      height: 24px;
+    }
+
+
+    > .cart {
+      background: icons.$cart;
+    }
+
+    > .phone {
+      background: icons.$contact;
+    }
+
+    > .magnifying {
+      background: icons.$magnifying;
+    }
+
+    > .rocket {
+      background: icons.$rocket;
+    }
+
+    > .btn {
+      border: none;
+      background: none;
+      color: #fff;
+    }
+  }
+
+  > .active {
+    background-color: colors.$primary;
+    transition: 0.2s;
   }
 }

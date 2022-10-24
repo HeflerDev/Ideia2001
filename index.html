@@ -13,31 +13,34 @@
   <meta property="og:image" content="">
 
   <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="sass/main.scss">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-<main class="app-container">
+<main class="app-container container">
   <nav class="nav-container">
     <div class="lang-block">
       <div class="label">Idioma</div>
       <div class="flag"></div>
       <div class="arrow"></div>
     </div>
-    <div class="menu-container"></div>
+    <div class="menu-block">
+      <div class="menu"></div>
+    </div>
   </nav>
   <header class="header-container">
     <div class="image-block">
-      <img src="#" alt="Not Fount"/>
+      <div class="img"></div>
     </div>
   </header>
+
   <section class="btn-container">
-    <div class="btn-block">
+    <div class="btn-block active">
       <div class="icon magnifying"></div>
       <button class="btn">Pesquisar Produtos</button>
     </div>
@@ -71,6 +74,7 @@
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/buttons.js"></script>
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')

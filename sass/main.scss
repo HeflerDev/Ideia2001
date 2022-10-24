@@ -1,7 +1,10 @@
 @use "variables/colors";
 @import "lib/media-mixins";
-@import "lib/flex-grid";
+@import "lib/container-flex";
 @import "nav-container";
+@import "footer-container";
+@import "header-container";
+@import "btn-container";
 
 body {
   background-color: colors.$dark;

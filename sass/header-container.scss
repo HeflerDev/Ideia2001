@@ -1,5 +1,15 @@
+@use "variables/icons";
 .header-container {
+  @media screen and (max-height: 500px) {
+    display: none;
+  }
+  width: 100%;
   >.image-block {
-    >img{}
+    width: 100%;
+    >.img{
+      margin: 50px auto;
+      background: icons.$header-image;
+      height: 80px;
+    }
   }
 }

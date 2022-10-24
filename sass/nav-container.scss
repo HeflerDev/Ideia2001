@@ -1,12 +1,37 @@
 @use "variables/colors";
 @use "variables/padding";
+@use "variables/icons";
 
 .nav-container {
-  display: flex;
+  width: 100%;
+
   >.lang-block {
+    position: absolute;
+    top: 10px;
+    left: 10px;
     background-color: colors.$light;
     display: flex;
     padding: padding.$large;
     border-radius: 20px;
+    >.label {
+
+    }
+    >.flag {
+      background: icons.$brazil;
+      width: 24px;
+      height: 24px;
+      padding: 0 20px;
+    }
+  }
+
+  >.menu-block {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    >.menu{
+      background: icons.$menu;
+      height: 3rem;
+      width: 3rem;
+    }
   }
 }

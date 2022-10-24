@@ -1,9 +1,27 @@
+@use 'variables/icons';
+@use 'variables/colors';
 
 .footer-container {
+  display: flex;
+  justify-content: center;
   >.icon-block {
-    >.icon {}
-    >. world {}
-    >.facebook{}
-    >.instagram{}
+    cursor: pointer;
+    margin: 30px 10px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+    >.icon {
+      width: 24px;
+      height: 24px;
+    }
+    >.world {
+      @include icons.world(colors.$primary);
+    }
+    >.facebook{
+      @include icons.facebook(colors.$primary);
+    }
+    >.instagram{
+      @include icons.instagram(colors.$primary);
+    }
   }
 }

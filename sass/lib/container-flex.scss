@@ -1,0 +1,25 @@
+@use "../variables/breakpoints";
+@use "media-mixins";
+
+$grid-columns: 12;
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+  min-height: 100vh;
+  @include media-mixins.break-up(breakpoints.$bk-sm) {
+    width: breakpoints.$bk-sm;
+  }
+  @include  media-mixins.break-up(breakpoints.$bk-md) {
+    width: breakpoints.$bk-md;
+  }
+  @include media-mixins.break-up(breakpoints.$bk-lg) {
+    width: breakpoints.$bk-lg;
+  }
+  @include media-mixins.break-up(breakpoints.$bk-xl) {
+    width: breakpoints.$bk-xl;
+  }
+}

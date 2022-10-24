@@ -1,17 +1,26 @@
-/* Error: Expected identifier.
- *   ,
- * 5 |     >. world{}
- *   |       ^
- *   '
- *   sass/footer-container.scss 5:7  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected identifier.\a   \2577 \a 5 \2502      >. world{}\a   \2502        ^\a   \2575 \a   sass/footer-container.scss 5:7  root stylesheet";
+.footer-container {
+  display: flex;
+  justify-content: center;
 }
+.footer-container > .icon-block {
+  cursor: pointer;
+  margin: 30px 10px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.footer-container > .icon-block > .icon {
+  width: 24px;
+  height: 24px;
+}
+.footer-container > .icon-block > .world {
+  background: url("https://api.iconify.design/fontisto/world-o.svg?color=#FA9401") no-repeat center center/contain;
+}
+.footer-container > .icon-block > .facebook {
+  background: url("../img/icons/icone-facebook.svg?color=#FA9401") no-repeat center center/contain;
+}
+.footer-container > .icon-block > .instagram {
+  background: url("https://api.iconify.design/fa/instagram.svg?color=#FA9401") no-repeat center center/contain;
+}
+
+/*# sourceMappingURL=footer-container.css.map */

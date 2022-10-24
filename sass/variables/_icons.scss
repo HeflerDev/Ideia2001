@@ -1,16 +1,24 @@
-$menu: url('https://api.iconify.design/eva/menu-outline.svg') no-repeat center center / contain;
+$menu: url('https://api.iconify.design/eva/menu-outline.svg?color=white') no-repeat center center / contain;
 $facebook:url('https://api.iconify.design/ant-design/facebook-filled.svg') no-repeat center center / contain;
-$instagram: url('https://api.iconify.design/fa/instagram.svg') no-repeat center center / contain;
+@mixin facebook($color:"black") {
+  background: url('../img/icons/icone-facebook.svg?color=#{$color}') no-repeat center center / contain;
+}
+@mixin instagram($color:"black") {
+  background: url('https://api.iconify.design/fa/instagram.svg?color=#{$color}') no-repeat center center / contain;
+}
 $whatsapp: url('https://api.iconify.design/logos/whatsapp-icon.svg') no-repeat center center / contain;
 $brazil: url('https://api.iconify.design/emojione/flag-for-brazil.svg') no-repeat center center / contain;
-$world: url('https://api.iconify.design/fontisto/world-o.svg') no-repeat center center / contain;
-$magnifying: url('https://api.iconify.design/ps/magnifying-glass.svg') no-repeat center center / contain;
-$rocket: url('../img/icons/icone-flag-lancamento.svg');
-$cart: url('../img/icons/icone-produto-carrinho-adicionado.svg');
-$contact: url('../img/icons/icone-contato.svg');
+@mixin world($color:"black") {
+  background: url('https://api.iconify.design/fontisto/world-o.svg?color=#{$color}') no-repeat center center / contain;
+}
+$magnifying: url('https://api.iconify.design/ps/magnifying-glass.svg?color=white') no-repeat center center / contain;
+$rocket: url('../img/icons/icone-flag-lancamento.svg?color=white') no-repeat center center / contain;
+$cart: url('../img/icons/icone-produto-carrinho-adicionado.svg') no-repeat center center / contain;
+$contact: url('../img/icons/icone-contato.svg') no-repeat center center / contain;
 $address: url('../img/icons/icone-contato-endereco.svg');
 $website: url('../img/icons/icone-contato-site.svg');
 $youtube-rounded: url('../img/icons/icone-youtube-rounded.svg');
 $linkedin-rounded: url('../img/icons/Ln.svg');
 $instagram-rounded: url('../img/icons/Instagram.svg');
 
+$header-image: url("../img/logo-ideia.svg") no-repeat center center / contain;
